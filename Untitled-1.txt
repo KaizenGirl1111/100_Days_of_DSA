@@ -1,0 +1,18 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+    vector<int> g1;
+    int n,i=0,input;
+    cin>>n;
+    while(cin>>input && i<n)
+        {
+            g1.push_back(input);
+        }
+    for(auto it=g1.rbegin();it!=g1.rend();it++)
+    {
+        cout<< *it <<" ";
+    }
+    return 0;
+}
